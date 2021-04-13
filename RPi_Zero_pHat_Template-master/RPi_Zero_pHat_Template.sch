@@ -1,0 +1,323 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Connection ~ 6100 2500
+Wire Wire Line
+	6000 2500 6100 2500
+Wire Wire Line
+	6000 2600 6000 2500
+Wire Wire Line
+	6700 5650 6650 5650
+Wire Wire Line
+	6700 5700 6700 5650
+$Comp
+L power:GND #PWR0114
+U 1 1 6069232E
+P 6700 5700
+F 0 "#PWR0114" H 6700 5450 50  0001 C CNN
+F 1 "GND" H 6705 5527 50  0000 C CNN
+F 2 "" H 6700 5700 50  0001 C CNN
+F 3 "" H 6700 5700 50  0001 C CNN
+	1    6700 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 5650 6300 5600
+Wire Wire Line
+	6350 5650 6300 5650
+$Comp
+L Device:L L1
+U 1 1 6069138A
+P 6500 5650
+F 0 "L1" V 6690 5650 50  0000 C CNN
+F 1 "L" V 6599 5650 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 6500 5650 50  0001 C CNN
+F 3 "~" H 6500 5650 50  0001 C CNN
+	1    6500 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 2450 6200 2500
+Wire Wire Line
+	6200 2500 6300 2500
+Connection ~ 6200 2500
+Wire Wire Line
+	6200 2600 6200 2500
+Wire Wire Line
+	6300 2500 6300 2600
+Wire Wire Line
+	6100 2500 6200 2500
+Wire Wire Line
+	6100 2600 6100 2500
+Wire Wire Line
+	6100 5600 6100 5650
+Wire Wire Line
+	6100 5650 6200 5650
+Connection ~ 6100 5650
+Wire Wire Line
+	6100 5700 6100 5650
+Wire Wire Line
+	6200 5650 6200 5600
+Wire Wire Line
+	6000 5650 6100 5650
+Wire Wire Line
+	6000 5600 6000 5650
+$Comp
+L power:GND #PWR0110
+U 1 1 6067CE13
+P 6100 5700
+F 0 "#PWR0110" H 6100 5450 50  0001 C CNN
+F 1 "GND" H 6105 5527 50  0000 C CNN
+F 2 "" H 6100 5700 50  0001 C CNN
+F 3 "" H 6100 5700 50  0001 C CNN
+	1    6100 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM32F1:STM32F103C8Tx U1
+U 1 1 6067B23E
+P 6200 4100
+F 0 "U1" H 6150 3750 50  0000 C CNN
+F 1 "STM32F103C8Tx" H 6150 3600 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5600 2700 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 6200 4100 50  0001 C CNN
+	1    6200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0113
+U 1 1 60721A12
+P 6200 2450
+F 0 "#PWR0113" H 6200 2300 50  0001 C CNN
+F 1 "+3.3V" H 6215 2623 50  0000 C CNN
+F 2 "" H 6200 2450 50  0001 C CNN
+F 3 "" H 6200 2450 50  0001 C CNN
+	1    6200 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6070DA95
+P 8250 2300
+F 0 "R2" H 8320 2346 50  0000 L CNN
+F 1 "4.7k" H 8320 2255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8180 2300 50  0001 C CNN
+F 3 "~" H 8250 2300 50  0001 C CNN
+	1    8250 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60711325
+P 8000 2300
+F 0 "R1" H 8070 2346 50  0000 L CNN
+F 1 "4.7k" H 8050 2250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7930 2300 50  0001 C CNN
+F 3 "~" H 8000 2300 50  0001 C CNN
+	1    8000 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2450 8250 2550
+Wire Wire Line
+	8000 2450 8000 2750
+Wire Wire Line
+	8000 2150 8000 2050
+Wire Wire Line
+	8000 2050 8100 2050
+Wire Wire Line
+	8250 2050 8250 2150
+$Comp
+L power:+3.3V #PWR0129
+U 1 1 6071D265
+P 8100 1950
+F 0 "#PWR0129" H 8100 1800 50  0001 C CNN
+F 1 "+3.3V" H 8115 2123 50  0000 C CNN
+F 2 "" H 8100 1950 50  0001 C CNN
+F 3 "" H 8100 1950 50  0001 C CNN
+	1    8100 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1950 8100 2050
+Connection ~ 8100 2050
+Wire Wire Line
+	8100 2050 8250 2050
+Wire Wire Line
+	5500 4200 5200 4200
+Text Label 5200 4200 0    50   ~ 0
+JTDO
+Wire Wire Line
+	5500 4300 5200 4300
+Text Label 5200 4300 0    50   ~ 0
+JNTRST
+Wire Wire Line
+	5500 4900 5200 4900
+Text Label 5200 4900 0    50   ~ 0
+SCL_I2C
+Wire Wire Line
+	5500 5000 5200 5000
+Text Label 5200 5000 0    50   ~ 0
+SDA_I2C
+Wire Wire Line
+	6800 4800 7100 4800
+Text Label 7100 4800 2    50   ~ 0
+TX
+Wire Wire Line
+	6800 4900 7100 4900
+Text Label 7100 4900 2    50   ~ 0
+RX
+Wire Wire Line
+	6800 5200 7100 5200
+Wire Wire Line
+	6800 5300 7100 5300
+Wire Wire Line
+	6800 5400 7100 5400
+Text Label 7100 5200 2    50   ~ 0
+JTMS
+Text Label 7100 5300 2    50   ~ 0
+JTCK
+Text Label 7100 5400 2    50   ~ 0
+JTDI
+Wire Wire Line
+	8250 2550 8450 2550
+Wire Wire Line
+	8000 2750 8450 2750
+Text Label 8450 2550 0    50   ~ 0
+SDA_I2C
+Text Label 8450 2750 0    50   ~ 0
+SCL_I2C
+$Sheet
+S 5400 1200 850  850 
+U 607B7D6E
+F0 "Alimentacion" 50
+F1 "Alimentacion.sch" 50
+F2 "VDDA" I R 6250 1950 50 
+$EndSheet
+$Sheet
+S 2550 3250 1500 2100
+U 60805E76
+F0 "RPWZ_comm" 50
+F1 "RPWZ_comm.sch" 50
+F2 "RPWZ_JTDO" I R 4050 3700 50 
+F3 "RPWZ_JTCK" I R 4050 3900 50 
+F4 "RPWZ_JTDI" I R 4050 4100 50 
+F5 "RPWZ_JNTRST" I R 4050 4300 50 
+F6 "RPWZ_JTMS" I R 4050 4500 50 
+F7 "RPWZ_SCL_I2C" I L 2550 4300 50 
+F8 "RPWZ_SDA_I2C" I L 2550 4450 50 
+F9 "RPWZ_TX" I L 2550 3550 50 
+F10 "RPWZ_RX" I L 2550 3700 50 
+F11 "RPZW_NRST" I R 4050 4900 50 
+F12 "RPWZ_BOOT" I R 4050 5100 50 
+$EndSheet
+Wire Wire Line
+	4050 3700 4350 3700
+Text Label 4350 3700 2    50   ~ 0
+JTDO
+Wire Wire Line
+	4050 3900 4350 3900
+Wire Wire Line
+	4050 4100 4350 4100
+Wire Wire Line
+	4050 4300 4350 4300
+Wire Wire Line
+	4050 4500 4350 4500
+Wire Wire Line
+	2550 3550 2250 3550
+Wire Wire Line
+	2550 3700 2250 3700
+Wire Wire Line
+	2550 4300 2250 4300
+Wire Wire Line
+	2550 4450 2250 4450
+Text Label 4350 4300 2    50   ~ 0
+JNTRST
+Text Label 4350 4500 2    50   ~ 0
+JTMS
+Text Label 4350 3900 2    50   ~ 0
+JTCK
+Text Label 4350 4100 2    50   ~ 0
+JTDI
+Text Label 2250 4300 0    50   ~ 0
+SCL_I2C
+Text Label 2250 4450 0    50   ~ 0
+SDA_I2C
+Text Label 2250 3700 0    50   ~ 0
+TX
+Text Label 2250 3550 0    50   ~ 0
+RX
+$Sheet
+S 7800 3750 1250 1700
+U 6081C49D
+F0 "Sheet6081C49C" 50
+F1 "In_Out.sch" 50
+F2 "Out_LM35" I L 7800 4400 50 
+F3 "Out_DHT22" I L 7800 4600 50 
+F4 "Out_HD38" I L 7800 4500 50 
+F5 "In_Resistencia_Si" I L 7800 4000 50 
+F6 "In_Ventilador" I L 7800 4100 50 
+F7 "In_Bomba_Agua" I L 7800 4200 50 
+F8 "In_LEDs" I L 7800 4300 50 
+$EndSheet
+Wire Wire Line
+	5200 2800 5500 2800
+Text Label 5200 2800 0    50   ~ 0
+NRST
+Wire Wire Line
+	4050 4900 4350 4900
+Text Label 4350 4900 2    50   ~ 0
+NRST
+Wire Wire Line
+	4050 5100 4350 5100
+Text Label 4350 5100 2    50   ~ 0
+BOOT
+Wire Wire Line
+	5500 3000 5200 3000
+Text Label 5200 3000 0    50   ~ 0
+BOOT
+Wire Wire Line
+	6250 1950 6400 1950
+Wire Wire Line
+	6400 1950 6400 2600
+Wire Wire Line
+	7800 4000 6800 4000
+Wire Wire Line
+	7800 4100 6800 4100
+Wire Wire Line
+	7800 4200 6800 4200
+Wire Wire Line
+	7800 4300 6800 4300
+Wire Wire Line
+	7800 4400 6800 4400
+Wire Wire Line
+	7800 4500 6800 4500
+Wire Wire Line
+	7800 4600 6800 4600
+Text Label 6900 4000 0    50   ~ 0
+O_Resistencia_Si
+Text Label 6900 4100 0    50   ~ 0
+O_Ventilador
+Text Label 6900 4200 0    50   ~ 0
+O_Bomba_Agua
+Text Label 6900 4300 0    50   ~ 0
+O_LEDs
+Text Label 6900 4400 0    50   ~ 0
+I_LM35
+Text Label 6900 4500 0    50   ~ 0
+I_HD38
+Text Label 6900 4600 0    50   ~ 0
+I_DHT22
+$EndSCHEMATC

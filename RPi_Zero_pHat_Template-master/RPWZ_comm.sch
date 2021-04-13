@@ -1,0 +1,217 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Connection ~ 6000 2600
+Wire Wire Line
+	6000 2700 6000 2600
+$Comp
+L power:+5V #PWR?
+U 1 1 60807588
+P 6000 2600
+AR Path="/60807588" Ref="#PWR?"  Part="1" 
+AR Path="/60805E76/60807588" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 6000 2450 50  0001 C CNN
+F 1 "+5V" V 6015 2728 50  0000 L CNN
+F 2 "" H 6000 2600 50  0001 C CNN
+F 3 "" H 6000 2600 50  0001 C CNN
+	1    6000 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6080758E
+P 4100 3000
+AR Path="/6080758E" Ref="#PWR?"  Part="1" 
+AR Path="/60805E76/6080758E" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 4100 2750 50  0001 C CNN
+F 1 "GND" H 4105 2827 50  0000 C CNN
+F 2 "" H 4100 3000 50  0001 C CNN
+F 3 "" H 4100 3000 50  0001 C CNN
+	1    4100 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60807594
+P 4100 4500
+AR Path="/60807594" Ref="#PWR?"  Part="1" 
+AR Path="/60805E76/60807594" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 4100 4250 50  0001 C CNN
+F 1 "GND" V 4105 4372 50  0000 R CNN
+F 2 "" H 4100 4500 50  0001 C CNN
+F 3 "" H 4100 4500 50  0001 C CNN
+	1    4100 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6080759A
+P 4100 3800
+AR Path="/6080759A" Ref="#PWR?"  Part="1" 
+AR Path="/60805E76/6080759A" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 4100 3550 50  0001 C CNN
+F 1 "GND" V 4105 3672 50  0000 R CNN
+F 2 "" H 4100 3800 50  0001 C CNN
+F 3 "" H 4100 3800 50  0001 C CNN
+	1    4100 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608075A0
+P 6000 4200
+AR Path="/608075A0" Ref="#PWR?"  Part="1" 
+AR Path="/60805E76/608075A0" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 6000 3950 50  0001 C CNN
+F 1 "GND" V 6005 4072 50  0000 R CNN
+F 2 "" H 6000 4200 50  0001 C CNN
+F 3 "" H 6000 4200 50  0001 C CNN
+	1    6000 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608075A6
+P 6000 4000
+AR Path="/608075A6" Ref="#PWR?"  Part="1" 
+AR Path="/60805E76/608075A6" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 6000 3750 50  0001 C CNN
+F 1 "GND" V 6005 3872 50  0000 R CNN
+F 2 "" H 6000 4000 50  0001 C CNN
+F 3 "" H 6000 4000 50  0001 C CNN
+	1    6000 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608075AC
+P 6000 3500
+AR Path="/608075AC" Ref="#PWR?"  Part="1" 
+AR Path="/60805E76/608075AC" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 6000 3250 50  0001 C CNN
+F 1 "GND" V 6005 3372 50  0000 R CNN
+F 2 "" H 6000 3500 50  0001 C CNN
+F 3 "" H 6000 3500 50  0001 C CNN
+	1    6000 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608075B2
+P 6000 3200
+AR Path="/608075B2" Ref="#PWR?"  Part="1" 
+AR Path="/60805E76/608075B2" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 6000 2950 50  0001 C CNN
+F 1 "GND" V 6005 3072 50  0000 R CNN
+F 2 "" H 6000 3200 50  0001 C CNN
+F 3 "" H 6000 3200 50  0001 C CNN
+	1    6000 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector-ML:RPi_GPIO J?
+U 1 1 608075B8
+P 4300 2600
+AR Path="/608075B8" Ref="J?"  Part="1" 
+AR Path="/60805E76/608075B8" Ref="J2"  Part="1" 
+F 0 "J2" H 5050 2850 60  0000 C CNN
+F 1 "RPi_GPIO" H 5050 2750 60  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 4300 2600 60  0001 C CNN
+F 3 "" H 4300 2600 60  0000 C CNN
+	1    4300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608075BE
+P 6000 2800
+AR Path="/608075BE" Ref="#PWR?"  Part="1" 
+AR Path="/60805E76/608075BE" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 6000 2550 50  0001 C CNN
+F 1 "GND" V 6005 2672 50  0000 R CNN
+F 2 "" H 6000 2800 50  0001 C CNN
+F 3 "" H 6000 2800 50  0001 C CNN
+	1    6000 2800
+	0    -1   -1   0   
+$EndComp
+Text Notes 4250 4900 0    100  ~ 0
+Raspberry Pi Zero W
+Text Label 3800 2700 0    50   ~ 0
+SDA_I2C
+Wire Wire Line
+	4100 4400 3800 4400
+Text Label 3900 4400 0    50   ~ 0
+JTDI
+Wire Wire Line
+	4100 3300 3800 3300
+Text Label 3850 3300 0    50   ~ 0
+JNTRST
+Wire Wire Line
+	4100 3200 3800 3200
+Text Label 3850 3200 0    50   ~ 0
+JTMS
+Wire Wire Line
+	4100 2800 3800 2800
+Text Label 3800 2800 0    50   ~ 0
+SCL_I2C
+Wire Wire Line
+	4100 2700 3800 2700
+Wire Wire Line
+	6000 2900 6300 2900
+Wire Wire Line
+	6000 3000 6300 3000
+Text Label 6100 2900 0    50   ~ 0
+TX
+Wire Wire Line
+	6000 3400 6300 3400
+Text Label 6100 3400 0    50   ~ 0
+JTDO
+Wire Wire Line
+	6000 3600 6300 3600
+Text Label 6100 3600 0    50   ~ 0
+JTCK
+Text Label 6100 3000 0    50   ~ 0
+RX
+Text HLabel 6300 3400 2    50   Input ~ 0
+RPWZ_JTDO
+Text HLabel 6300 3600 2    50   Input ~ 0
+RPWZ_JTCK
+Text HLabel 3800 4400 0    50   Input ~ 0
+RPWZ_JTDI
+Text HLabel 3800 3300 0    50   Input ~ 0
+RPWZ_JNTRST
+Text HLabel 3800 3200 0    50   Input ~ 0
+RPWZ_JTMS
+Text HLabel 3800 2800 0    50   Input ~ 0
+RPWZ_SCL_I2C
+Text HLabel 3800 2700 0    50   Input ~ 0
+RPWZ_SDA_I2C
+Text HLabel 6300 2900 2    50   Input ~ 0
+RPWZ_TX
+Text HLabel 6300 3000 2    50   Input ~ 0
+RPWZ_RX
+Wire Wire Line
+	4100 4200 3800 4200
+Text Label 3900 4200 0    50   ~ 0
+NRST
+Text HLabel 3800 4200 0    50   Input ~ 0
+RPZW_NRST
+Wire Wire Line
+	6000 4100 6300 4100
+Text Label 6300 4100 2    50   ~ 0
+BOOT
+Text HLabel 6300 4100 2    50   Input ~ 0
+RPWZ_BOOT
+$EndSCHEMATC
