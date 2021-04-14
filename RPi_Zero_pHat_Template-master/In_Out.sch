@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -102,28 +102,28 @@ $EndComp
 $Comp
 L power:+5V #PWR0132
 U 1 1 60727756
-P 2150 2850
-F 0 "#PWR0132" H 2150 2700 50  0001 C CNN
-F 1 "+5V" V 2165 2978 50  0000 L CNN
-F 2 "" H 2150 2850 50  0001 C CNN
-F 3 "" H 2150 2850 50  0001 C CNN
-	1    2150 2850
+P 2150 2550
+F 0 "#PWR0132" H 2150 2400 50  0001 C CNN
+F 1 "+5V" V 2165 2678 50  0000 L CNN
+F 2 "" H 2150 2550 50  0001 C CNN
+F 3 "" H 2150 2550 50  0001 C CNN
+	1    2150 2550
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 6072863A
-P 2150 2550
+P 2150 2650
 AR Path="/6072863A" Ref="#PWR?"  Part="1" 
 AR Path="/6081C49D/6072863A" Ref="#PWR0133"  Part="1" 
-F 0 "#PWR0133" H 2150 2300 50  0001 C CNN
-F 1 "GND" H 2155 2377 50  0000 C CNN
-F 2 "" H 2150 2550 50  0001 C CNN
-F 3 "" H 2150 2550 50  0001 C CNN
-	1    2150 2550
+F 0 "#PWR0133" H 2150 2400 50  0001 C CNN
+F 1 "GND" H 2155 2477 50  0000 C CNN
+F 2 "" H 2150 2650 50  0001 C CNN
+F 3 "" H 2150 2650 50  0001 C CNN
+	1    2150 2650
 	0    -1   -1   0   
 $EndComp
-Text HLabel 2500 2750 2    50   Input ~ 0
+Text HLabel 2500 2850 2    50   Input ~ 0
 Out_DHT22
 Text HLabel 2500 3750 2    50   Input ~ 0
 Out_HD38
@@ -280,21 +280,6 @@ Wire Wire Line
 Wire Wire Line
 	7300 1300 7050 1300
 Wire Wire Line
-	2500 2750 2150 2750
-Text HLabel 4850 3500 0    50   Input ~ 0
-In_Ventilador
-$Comp
-L Connector:Screw_Terminal_01x02 J7
-U 1 1 6075779A
-P 6000 3050
-F 0 "J7" V 5964 2862 50  0000 R CNN
-F 1 "Ventilador" V 5873 2862 50  0000 R CNN
-F 2 "MOLEX_2:MOLEX_22-29-2021" H 6000 3050 50  0001 C CNN
-F 3 "~" H 6000 3050 50  0001 C CNN
-	1    6000 3050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
 	6650 1300 6500 1300
 Wire Wire Line
 	6950 1300 7050 1300
@@ -302,198 +287,293 @@ Connection ~ 7050 1300
 Wire Wire Line
 	6400 1650 6900 1650
 $Comp
-L power:+12V #PWR0141
-U 1 1 607774C7
-P 6650 3250
-F 0 "#PWR0141" H 6650 3100 50  0001 C CNN
-F 1 "+12V" V 6665 3378 50  0000 L CNN
-F 2 "" H 6650 3250 50  0001 C CNN
-F 3 "" H 6650 3250 50  0001 C CNN
-	1    6650 3250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6650 3250 6100 3250
-Text HLabel 4850 4500 0    50   Input ~ 0
-In_Bomba_Agua
-$Comp
-L Connector:Screw_Terminal_01x02 J8
-U 1 1 60785157
-P 6000 4050
-F 0 "J8" V 5964 3862 50  0000 R CNN
-F 1 "Bomba Agua" V 5873 3862 50  0000 R CNN
-F 2 "MOLEX_2:MOLEX_22-29-2021" H 6000 4050 50  0001 C CNN
-F 3 "~" H 6000 4050 50  0001 C CNN
-	1    6000 4050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+12V #PWR0144
-U 1 1 60785170
-P 6650 4250
-F 0 "#PWR0144" H 6650 4100 50  0001 C CNN
-F 1 "+12V" V 6665 4378 50  0000 L CNN
-F 2 "" H 6650 4250 50  0001 C CNN
-F 3 "" H 6650 4250 50  0001 C CNN
-	1    6650 4250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6650 4250 6100 4250
-$Comp
 L Relay_SolidState:TLP3543 U8
 U 1 1 60790915
-P 5650 2400
-F 0 "U8" H 5650 2725 50  0000 C CNN
-F 1 "TLP3543" H 5650 2634 50  0000 C CNN
-F 2 "2:SOP254P700X210-6N" H 5650 2100 50  0001 C CNN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12660&prodName=TLP3543" H 5650 2400 50  0001 C CNN
-	1    5650 2400
+P 5850 2400
+F 0 "U8" H 5850 2725 50  0000 C CNN
+F 1 "TLP3543" H 5850 2634 50  0000 C CNN
+F 2 "2:SOP254P700X210-6N" H 5850 2100 50  0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12660&prodName=TLP3543" H 5850 2400 50  0001 C CNN
+	1    5850 2400
 	1    0    0    -1  
 $EndComp
-Text HLabel 5350 2300 0    50   Input ~ 0
+Text HLabel 5050 2300 0    50   Input ~ 0
 In_LEDs
 $Comp
 L Connector:Screw_Terminal_01x02 J9
 U 1 1 607A10A5
-P 6100 2100
-F 0 "J9" V 6064 1912 50  0000 R CNN
-F 1 "Tira LED" V 5973 1912 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6100 2100 50  0001 C CNN
-F 3 "~" H 6100 2100 50  0001 C CNN
-	1    6100 2100
+P 6300 2100
+F 0 "J9" V 6264 1912 50  0000 R CNN
+F 1 "Tira LED" V 6173 1912 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6300 2100 50  0001 C CNN
+F 3 "~" H 6300 2100 50  0001 C CNN
+	1    6300 2100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6100 2300 5950 2300
+	6300 2300 6150 2300
 Wire Wire Line
-	6200 2300 6600 2300
+	6400 2300 6800 2300
 $Comp
 L power:+12V #PWR0139
 U 1 1 607A3F0B
-P 6600 2300
-F 0 "#PWR0139" H 6600 2150 50  0001 C CNN
-F 1 "+12V" V 6615 2428 50  0000 L CNN
-F 2 "" H 6600 2300 50  0001 C CNN
-F 3 "" H 6600 2300 50  0001 C CNN
-	1    6600 2300
+P 6800 2300
+F 0 "#PWR0139" H 6800 2150 50  0001 C CNN
+F 1 "+12V" V 6815 2428 50  0000 L CNN
+F 2 "" H 6800 2300 50  0001 C CNN
+F 3 "" H 6800 2300 50  0001 C CNN
+	1    6800 2300
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 607A42C7
-P 5950 2500
+P 6150 2500
 AR Path="/607A42C7" Ref="#PWR?"  Part="1" 
 AR Path="/6081C49D/607A42C7" Ref="#PWR0140"  Part="1" 
-F 0 "#PWR0140" H 5950 2250 50  0001 C CNN
-F 1 "GND" H 5955 2327 50  0000 C CNN
-F 2 "" H 5950 2500 50  0001 C CNN
-F 3 "" H 5950 2500 50  0001 C CNN
-	1    5950 2500
+F 0 "#PWR0140" H 6150 2250 50  0001 C CNN
+F 1 "GND" H 6155 2327 50  0000 C CNN
+F 2 "" H 6150 2500 50  0001 C CNN
+F 3 "" H 6150 2500 50  0001 C CNN
+	1    6150 2500
 	1    0    0    -1  
 $EndComp
+Text Label 7650 1300 0    50   ~ 0
+120VAC
 $Comp
-L Device:R R5
-U 1 1 607B0252
-P 5100 3500
-F 0 "R5" V 4893 3500 50  0000 C CNN
-F 1 "1k" V 4984 3500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5030 3500 50  0001 C CNN
-F 3 "~" H 5100 3500 50  0001 C CNN
-	1    5100 3500
+L Device:R R7
+U 1 1 6075D8AF
+P 5300 2300
+F 0 "R7" V 5093 2300 50  0000 C CNN
+F 1 "1k" V 5184 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5230 2300 50  0001 C CNN
+F 3 "~" H 5300 2300 50  0001 C CNN
+	1    5300 2300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4950 3500 4850 3500
-$Comp
-L dk_Transistors-Bipolar-BJT-Single:2N2222A Q2
-U 1 1 607B19D8
-P 5550 3500
-F 0 "Q2" H 5738 3553 60  0000 L CNN
-F 1 "2N2222A" H 5738 3447 60  0000 L CNN
-F 2 "digikey-footprints:TO-18-3" H 5750 3700 60  0001 L CNN
-F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 5750 3800 60  0001 L CNN
-F 4 "2N2222ACS-ND" H 5750 3900 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N2222A" H 5750 4000 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5750 4100 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 5750 4200 60  0001 L CNN "Family"
-F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 5750 4300 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 5750 4400 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.8A TO-18" H 5750 4500 60  0001 L CNN "Description"
-F 11 "Central Semiconductor Corp" H 5750 4600 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5750 4700 60  0001 L CNN "Status"
-	1    5550 3500
-	1    0    0    -1  
-$EndComp
+	5150 2300 5050 2300
 Wire Wire Line
-	5350 3500 5250 3500
-Wire Wire Line
-	6000 3250 5650 3250
-Wire Wire Line
-	5650 3250 5650 3300
-$Comp
-L Device:R R6
-U 1 1 607B8936
-P 5100 4500
-F 0 "R6" V 4893 4500 50  0000 C CNN
-F 1 "1k" V 4984 4500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5030 4500 50  0001 C CNN
-F 3 "~" H 5100 4500 50  0001 C CNN
-	1    5100 4500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4950 4500 4850 4500
-$Comp
-L dk_Transistors-Bipolar-BJT-Single:2N2222A Q3
-U 1 1 607B894A
-P 5550 4500
-F 0 "Q3" H 5738 4553 60  0000 L CNN
-F 1 "2N2222A" H 5738 4447 60  0000 L CNN
-F 2 "digikey-footprints:TO-18-3" H 5750 4700 60  0001 L CNN
-F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 5750 4800 60  0001 L CNN
-F 4 "2N2222ACS-ND" H 5750 4900 60  0001 L CNN "Digi-Key_PN"
-F 5 "2N2222A" H 5750 5000 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5750 5100 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 5750 5200 60  0001 L CNN "Family"
-F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 5750 5300 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 5750 5400 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.8A TO-18" H 5750 5500 60  0001 L CNN "Description"
-F 11 "Central Semiconductor Corp" H 5750 5600 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5750 5700 60  0001 L CNN "Status"
-	1    5550 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 4500 5250 4500
-Wire Wire Line
-	6000 4250 5650 4250
-Wire Wire Line
-	5650 4250 5650 4300
+	5450 2300 5550 2300
 $Comp
 L power:GND #PWR?
-U 1 1 607BE1A2
-P 5650 3700
-AR Path="/607BE1A2" Ref="#PWR?"  Part="1" 
-AR Path="/6081C49D/607BE1A2" Ref="#PWR0142"  Part="1" 
-F 0 "#PWR0142" H 5650 3450 50  0001 C CNN
-F 1 "GND" H 5655 3527 50  0000 C CNN
-F 2 "" H 5650 3700 50  0001 C CNN
-F 3 "" H 5650 3700 50  0001 C CNN
-	1    5650 3700
+U 1 1 6075F194
+P 5550 2500
+AR Path="/6075F194" Ref="#PWR?"  Part="1" 
+AR Path="/6081C49D/6075F194" Ref="#PWR0145"  Part="1" 
+F 0 "#PWR0145" H 5550 2250 50  0001 C CNN
+F 1 "GND" H 5555 2327 50  0000 C CNN
+F 2 "" H 5550 2500 50  0001 C CNN
+F 3 "" H 5550 2500 50  0001 C CNN
+	1    5550 2500
 	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4004 D1
+U 1 1 60778193
+P 6450 3200
+F 0 "D1" H 6450 2983 50  0000 C CNN
+F 1 "1N4004" H 6450 3074 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6450 3025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6450 3200 50  0001 C CNN
+	1    6450 3200
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 607BE5CF
-P 5650 4700
+P 6150 5750
 AR Path="/607BE5CF" Ref="#PWR?"  Part="1" 
 AR Path="/6081C49D/607BE5CF" Ref="#PWR0143"  Part="1" 
-F 0 "#PWR0143" H 5650 4450 50  0001 C CNN
-F 1 "GND" H 5655 4527 50  0000 C CNN
-F 2 "" H 5650 4700 50  0001 C CNN
-F 3 "" H 5650 4700 50  0001 C CNN
-	1    5650 4700
+F 0 "#PWR0143" H 6150 5500 50  0001 C CNN
+F 1 "GND" H 6155 5577 50  0000 C CNN
+F 2 "" H 6150 5750 50  0001 C CNN
+F 3 "" H 6150 5750 50  0001 C CNN
+	1    6150 5750
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 607BE1A2
+P 6050 4100
+AR Path="/607BE1A2" Ref="#PWR?"  Part="1" 
+AR Path="/6081C49D/607BE1A2" Ref="#PWR0142"  Part="1" 
+F 0 "#PWR0142" H 6050 3850 50  0001 C CNN
+F 1 "GND" H 6055 3927 50  0000 C CNN
+F 2 "" H 6050 4100 50  0001 C CNN
+F 3 "" H 6050 4100 50  0001 C CNN
+	1    6050 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5300 6150 5350
+Wire Wire Line
+	6500 5300 6250 5300
+Wire Wire Line
+	5850 5550 5750 5550
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:2N2222A Q3
+U 1 1 607B894A
+P 6050 5550
+F 0 "Q3" H 6238 5603 60  0000 L CNN
+F 1 "2N2222A" H 6238 5497 60  0000 L CNN
+F 2 "digikey-footprints:TO-18-3" H 6250 5750 60  0001 L CNN
+F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 6250 5850 60  0001 L CNN
+F 4 "2N2222ACS-ND" H 6250 5950 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N2222A" H 6250 6050 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6250 6150 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6250 6250 60  0001 L CNN "Family"
+F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 6250 6350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 6250 6450 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.8A TO-18" H 6250 6550 60  0001 L CNN "Description"
+F 11 "Central Semiconductor Corp" H 6250 6650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6250 6750 60  0001 L CNN "Status"
+	1    6050 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 5550 5350 5550
+$Comp
+L Device:R R6
+U 1 1 607B8936
+P 5600 5550
+F 0 "R6" V 5393 5550 50  0000 C CNN
+F 1 "1k" V 5484 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5530 5550 50  0001 C CNN
+F 3 "~" H 5600 5550 50  0001 C CNN
+	1    5600 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 3650 6050 3700
+Wire Wire Line
+	6400 3650 6200 3650
+Wire Wire Line
+	5750 3900 5650 3900
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:2N2222A Q2
+U 1 1 607B19D8
+P 5950 3900
+F 0 "Q2" H 6138 3953 60  0000 L CNN
+F 1 "2N2222A" H 6138 3847 60  0000 L CNN
+F 2 "digikey-footprints:TO-18-3" H 6150 4100 60  0001 L CNN
+F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 6150 4200 60  0001 L CNN
+F 4 "2N2222ACS-ND" H 6150 4300 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N2222A" H 6150 4400 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6150 4500 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6150 4600 60  0001 L CNN "Family"
+F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" H 6150 4700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" H 6150 4800 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.8A TO-18" H 6150 4900 60  0001 L CNN "Description"
+F 11 "Central Semiconductor Corp" H 6150 5000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6150 5100 60  0001 L CNN "Status"
+	1    5950 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3900 5250 3900
+$Comp
+L Device:R R5
+U 1 1 607B0252
+P 5500 3900
+F 0 "R5" V 5293 3900 50  0000 C CNN
+F 1 "1k" V 5384 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5430 3900 50  0001 C CNN
+F 3 "~" H 5500 3900 50  0001 C CNN
+	1    5500 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 5300 6800 5300
+$Comp
+L power:+12V #PWR0144
+U 1 1 60785170
+P 7150 5300
+F 0 "#PWR0144" H 7150 5150 50  0001 C CNN
+F 1 "+12V" V 7165 5428 50  0000 L CNN
+F 2 "" H 7150 5300 50  0001 C CNN
+F 3 "" H 7150 5300 50  0001 C CNN
+	1    7150 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J8
+U 1 1 60785157
+P 6500 5100
+F 0 "J8" V 6464 4912 50  0000 R CNN
+F 1 "Bomba Agua" V 6373 4912 50  0000 R CNN
+F 2 "MOLEX_2:MOLEX_22-29-2021" H 6500 5100 50  0001 C CNN
+F 3 "~" H 6500 5100 50  0001 C CNN
+	1    6500 5100
+	0    -1   -1   0   
+$EndComp
+Text HLabel 5350 5550 0    50   Input ~ 0
+In_Bomba_Agua
+Wire Wire Line
+	7050 3650 6750 3650
+$Comp
+L power:+12V #PWR0141
+U 1 1 607774C7
+P 7050 3650
+F 0 "#PWR0141" H 7050 3500 50  0001 C CNN
+F 1 "+12V" V 7065 3778 50  0000 L CNN
+F 2 "" H 7050 3650 50  0001 C CNN
+F 3 "" H 7050 3650 50  0001 C CNN
+	1    7050 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J7
+U 1 1 6075779A
+P 6400 3450
+F 0 "J7" V 6364 3262 50  0000 R CNN
+F 1 "Ventilador" V 6273 3262 50  0000 R CNN
+F 2 "MOLEX_2:MOLEX_22-29-2021" H 6400 3450 50  0001 C CNN
+F 3 "~" H 6400 3450 50  0001 C CNN
+	1    6400 3450
+	0    -1   -1   0   
+$EndComp
+Text HLabel 5250 3900 0    50   Input ~ 0
+In_Ventilador
+$Comp
+L Diode:1N4004 D2
+U 1 1 60788B03
+P 6550 4850
+F 0 "D2" H 6550 4633 50  0000 C CNN
+F 1 "1N4004" H 6550 4724 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6550 4675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6550 4850 50  0001 C CNN
+	1    6550 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 3200 6200 3200
+Wire Wire Line
+	6200 3200 6200 3650
+Connection ~ 6200 3650
+Wire Wire Line
+	6200 3650 6050 3650
+Wire Wire Line
+	6600 3200 6750 3200
+Wire Wire Line
+	6750 3200 6750 3650
+Connection ~ 6750 3650
+Wire Wire Line
+	6750 3650 6500 3650
+Wire Wire Line
+	6400 4850 6250 4850
+Wire Wire Line
+	6250 4850 6250 5300
+Connection ~ 6250 5300
+Wire Wire Line
+	6250 5300 6150 5300
+Wire Wire Line
+	6700 4850 6800 4850
+Wire Wire Line
+	6800 4850 6800 5300
+Connection ~ 6800 5300
+Wire Wire Line
+	6800 5300 6600 5300
+Wire Wire Line
+	2150 2850 2500 2850
 $EndSCHEMATC
