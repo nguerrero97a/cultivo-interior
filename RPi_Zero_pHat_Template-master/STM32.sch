@@ -162,26 +162,18 @@ Wire Wire Line
 Text Label 2550 2550 0    50   ~ 0
 BOOT
 Wire Wire Line
-	5150 3550 4150 3550
-Wire Wire Line
-	5150 3650 4150 3650
-Wire Wire Line
-	5150 3750 4150 3750
-Wire Wire Line
-	5150 3850 4150 3850
-Wire Wire Line
 	5150 3950 4150 3950
 Wire Wire Line
 	5150 4050 4150 4050
 Wire Wire Line
 	5150 4150 4150 4150
-Text Label 4250 3550 0    50   ~ 0
+Text Label 2150 4250 0    50   ~ 0
 O_Resistencia_Si
-Text Label 4250 3650 0    50   ~ 0
+Text Label 2150 4150 0    50   ~ 0
 O_Ventilador
-Text Label 4250 3750 0    50   ~ 0
+Text Label 2150 4050 0    50   ~ 0
 O_Bomba_Agua
-Text Label 4250 3850 0    50   ~ 0
+Text Label 2150 3950 0    50   ~ 0
 O_LEDs
 Text Label 4250 3950 0    50   ~ 0
 I_LM35
@@ -201,13 +193,13 @@ Text HLabel 8350 2200 2    50   Input ~ 0
 STM32_SCL_I2C
 Text HLabel 8350 2000 2    50   Input ~ 0
 STM32_SDA_I2C
-Text HLabel 5150 3550 2    50   Input ~ 0
+Text HLabel 2050 4250 0    50   Input ~ 0
 STM32_Resistencia_Si
-Text HLabel 5150 3650 2    50   Input ~ 0
+Text HLabel 2050 4150 0    50   Input ~ 0
 STM32_Ventilador
-Text HLabel 5150 3750 2    50   Input ~ 0
+Text HLabel 2050 4050 0    50   Input ~ 0
 STM32_Bomba_Agua
-Text HLabel 5150 3850 2    50   Input ~ 0
+Text HLabel 2050 3950 0    50   Input ~ 0
 STM32_LEDs
 Text HLabel 5150 3950 2    50   Input ~ 0
 STM32_LM35
@@ -563,4 +555,59 @@ Wire Wire Line
 	3750 2150 3750 1950
 Text Label 8000 4450 0    50   ~ 0
 VDDA
+Wire Wire Line
+	2850 3950 2050 3950
+Wire Wire Line
+	2050 4050 2850 4050
+Wire Wire Line
+	2050 4150 2850 4150
+Wire Wire Line
+	2050 4250 2850 4250
+$Comp
+L Device:R R?
+U 1 1 607A4463
+P 2000 4600
+AR Path="/6081C49D/607A4463" Ref="R?"  Part="1" 
+AR Path="/607B7D6E/607A4463" Ref="R?"  Part="1" 
+AR Path="/60760232/607A4463" Ref="R11"  Part="1" 
+F 0 "R11" V 1793 4600 50  0000 C CNN
+F 1 "1k" V 1884 4600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1930 4600 50  0001 C CNN
+F 3 "~" H 2000 4600 50  0001 C CNN
+	1    2000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 607A446A
+P 2000 4900
+AR Path="/607B7D6E/607A446A" Ref="D?"  Part="1" 
+AR Path="/60760232/607A446A" Ref="D5"  Part="1" 
+F 0 "D5" H 2000 5150 50  0000 C CNN
+F 1 "LED" H 2000 5050 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 2000 4900 50  0001 C CNN
+F 3 "~" H 2000 4900 50  0001 C CNN
+	1    2000 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2000 5100 2000 5050
+$Comp
+L power:GND #PWR?
+U 1 1 607A4473
+P 2000 5100
+AR Path="/607A4473" Ref="#PWR?"  Part="1" 
+AR Path="/607B7D6E/607A4473" Ref="#PWR?"  Part="1" 
+AR Path="/60760232/607A4473" Ref="#PWR0148"  Part="1" 
+F 0 "#PWR0148" H 2000 4850 50  0001 C CNN
+F 1 "GND" H 2005 4927 50  0000 C CNN
+F 2 "" H 2000 5100 50  0001 C CNN
+F 3 "" H 2000 5100 50  0001 C CNN
+	1    2000 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4450 2000 4350
+Wire Wire Line
+	2000 4350 2850 4350
 $EndSCHEMATC
