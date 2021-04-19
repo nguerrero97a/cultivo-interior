@@ -185,26 +185,6 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Diode_1N4004
-#
-DEF Diode_1N4004 D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Diode_1N4004" 0 -100 50 H V C CNN
-F2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS 1N4002 1N4003 1N4004 1N4005 1N4006 1N4007 BA157 BA158 BA159
-$FPLIST
- D*DO?41*
-$ENDFPLIST
-DRAW
-P 2 0 1 10 -50 50 -50 -50 N
-P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # MCU_ST_STM32F1_STM32F103C8Tx
 #
 DEF MCU_ST_STM32F1_STM32F103C8Tx U 0 20 Y Y 1 F N
@@ -432,6 +412,30 @@ X Vo+ 3 400 100 150 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
+# dk_Diodes-Rectifiers-Single_1N4148W-TP
+#
+DEF dk_Diodes-Rectifiers-Single_1N4148W-TP D 0 0 N N 1 F N
+F0 "D" 0 100 60 H V C BNN
+F1 "dk_Diodes-Rectifiers-Single_1N4148W-TP" 50 -100 60 H V C CNN
+F2 "digikey-footprints:SOD-123" 200 200 60 H I L CNN
+F3 "https://www.mccsemi.com/pdf/Products/1N4148W(SOD123).pdf" 200 300 60 H I L CNN
+F4 "1N4148WTPMSCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "1N4148W-TP" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Diodes - Rectifiers - Single" 200 700 60 H I L CNN "Family"
+F8 "https://www.mccsemi.com/pdf/Products/1N4148W(SOD123).pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/micro-commercial-co/1N4148W-TP/1N4148WTPMSCT-ND/717311" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "DIODE GEN PURP 100V 150MA SOD123" 200 1000 60 H I L CNN "Description"
+F11 "Micro Commercial Co" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 50 50 50 -50 N
+P 4 0 1 0 -50 50 -50 -50 50 0 -50 50 F
+X ~ A -200 0 150 R 50 50 1 1 P
+X ~ K 200 0 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # dk_Temperature-Sensors-Analog-and-Digital-Output_LM35DT_NOPB
 #
 DEF dk_Temperature-Sensors-Analog-and-Digital-Output_LM35DT_NOPB U 0 40 Y Y 1 F N
@@ -456,21 +460,21 @@ X VOUT 3 400 0 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# dk_Transistors-Bipolar-BJT-Single_2N2222A
+# dk_Transistors-Bipolar-BJT-Single_FMMT493TA
 #
-DEF dk_Transistors-Bipolar-BJT-Single_2N2222A Q 0 0 Y Y 1 F N
+DEF dk_Transistors-Bipolar-BJT-Single_FMMT493TA Q 0 0 Y Y 1 F N
 F0 "Q" -126 166 60 H V L CNN
-F1 "dk_Transistors-Bipolar-BJT-Single_2N2222A" 206 0 60 V V C CNN
-F2 "digikey-footprints:TO-18-3" 200 200 60 H I L CNN
-F3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" 200 300 60 H I L CNN
-F4 "2N2222ACS-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "2N2222A" 200 500 60 H I L CNN "MPN"
+F1 "dk_Transistors-Bipolar-BJT-Single_FMMT493TA" 206 0 60 V V C CNN
+F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
+F3 "https://www.diodes.com/assets/Datasheets/FMMT493.pdf" 200 300 60 H I L CNN
+F4 "FMMT493CT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "FMMT493TA" 200 500 60 H I L CNN "MPN"
 F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
 F7 "Transistors - Bipolar (BJT) - Single" 200 700 60 H I L CNN "Family"
-F8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2221A.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/central-semiconductor-corp/2N2222A/2N2222ACS-ND/4806845" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "TRANS NPN 40V 0.8A TO-18" 200 1000 60 H I L CNN "Description"
-F11 "Central Semiconductor Corp" 200 1100 60 H I L CNN "Manufacturer"
+F8 "https://www.diodes.com/assets/Datasheets/FMMT493.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/diodes-incorporated/FMMT493TA/FMMT493CT-ND/92663" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TRANS NPN 100V 1A SOT23-3" 200 1000 60 H I L CNN "Description"
+F11 "Diodes Incorporated" 200 1100 60 H I L CNN "Manufacturer"
 F12 "Active" 200 1200 60 H I L CNN "Status"
 DRAW
 C 0 0 128 0 1 0 f
@@ -480,8 +484,8 @@ P 2 0 1 0 0 -50 100 -100 N
 P 2 0 1 0 0 50 100 100 N
 P 2 0 1 0 0 100 0 -100 N
 P 4 0 1 0 60 -50 80 -90 40 -100 60 -50 F
-X E 1 100 -200 100 U 50 50 1 1 P
-X B 2 -200 0 100 R 50 50 1 1 I
+X B 1 -200 0 100 R 50 50 1 1 I
+X E 2 100 -200 100 U 50 50 1 1 P
 X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
