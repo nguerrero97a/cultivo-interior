@@ -264,4 +264,12 @@ Wire Wire Line
 	6150 4500 6000 4500
 Wire Wire Line
 	6150 4500 6150 4650
+Wire Wire Line
+	4100 4000 3800 4000
+Wire Wire Line
+	4100 4100 3800 4100
+Text HLabel 3800 4100 0    50   Input ~ 0
+RPZW_IO1
+Text HLabel 3800 4000 0    50   Input ~ 0
+RPZW_IO2
 $EndSCHEMATC

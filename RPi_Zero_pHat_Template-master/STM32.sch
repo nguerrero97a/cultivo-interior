@@ -610,4 +610,12 @@ Wire Wire Line
 	2000 4450 2000 4350
 Wire Wire Line
 	2000 4350 2850 4350
+Wire Wire Line
+	2850 3450 2550 3450
+Wire Wire Line
+	2850 3550 2550 3550
+Text HLabel 2550 3550 0    50   Input ~ 0
+STM32_IO1
+Text HLabel 2550 3450 0    50   Input ~ 0
+STM32_IO2
 $EndSCHEMATC
