@@ -269,6 +269,26 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Diode_1N4148WS
+#
+DEF Diode_1N4148WS D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Diode_1N4148WS" 0 -100 50 H V C CNN
+F2 "Diode_SMD:D_SOD-323" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS 1N4448WS BAS316
+$FPLIST
+ D*SOD?323*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # MCU_ST_STM32F1_STM32F103C8Tx
 #
 DEF MCU_ST_STM32F1_STM32F103C8Tx U 0 20 Y Y 1 F N
@@ -449,6 +469,23 @@ X PWR PWR 200 100 100 L 40 40 1 1 B
 ENDDRAW
 ENDDEF
 #
+# Switch_SW_Push
+#
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
 # Triac_Thyristor_BT136-500
 #
 DEF Triac_Thyristor_BT136-500 Q 0 0 Y Y 1 F N
@@ -496,30 +533,6 @@ X Vo+ 3 400 100 150 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# dk_Diodes-Rectifiers-Single_1N4148W-TP
-#
-DEF dk_Diodes-Rectifiers-Single_1N4148W-TP D 0 0 N N 1 F N
-F0 "D" 0 100 60 H V C BNN
-F1 "dk_Diodes-Rectifiers-Single_1N4148W-TP" 50 -100 60 H V C CNN
-F2 "digikey-footprints:SOD-123" 200 200 60 H I L CNN
-F3 "https://www.mccsemi.com/pdf/Products/1N4148W(SOD123).pdf" 200 300 60 H I L CNN
-F4 "1N4148WTPMSCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "1N4148W-TP" 200 500 60 H I L CNN "MPN"
-F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
-F7 "Diodes - Rectifiers - Single" 200 700 60 H I L CNN "Family"
-F8 "https://www.mccsemi.com/pdf/Products/1N4148W(SOD123).pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/micro-commercial-co/1N4148W-TP/1N4148WTPMSCT-ND/717311" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "DIODE GEN PURP 100V 150MA SOD123" 200 1000 60 H I L CNN "Description"
-F11 "Micro Commercial Co" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-P 2 0 1 0 50 50 50 -50 N
-P 4 0 1 0 -50 50 -50 -50 50 0 -50 50 F
-X ~ A -200 0 150 R 50 50 1 1 P
-X ~ K 200 0 150 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # dk_Temperature-Sensors-Analog-and-Digital-Output_LM35DT_NOPB
 #
 DEF dk_Temperature-Sensors-Analog-and-Digital-Output_LM35DT_NOPB U 0 40 Y Y 1 F N
@@ -544,22 +557,22 @@ X VOUT 3 400 0 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# dk_Transistors-Bipolar-BJT-Single_FMMT493TA
+# dk_Transistors-Bipolar-BJT-Single_MMBT2222A_Obsolete
 #
-DEF dk_Transistors-Bipolar-BJT-Single_FMMT493TA Q 0 0 Y Y 1 F N
+DEF dk_Transistors-Bipolar-BJT-Single_MMBT2222A_Obsolete Q 0 0 Y Y 1 F N
 F0 "Q" -126 166 60 H V L CNN
-F1 "dk_Transistors-Bipolar-BJT-Single_FMMT493TA" 206 0 60 V V C CNN
+F1 "dk_Transistors-Bipolar-BJT-Single_MMBT2222A_Obsolete" 206 0 60 V V C CNN
 F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
-F3 "https://www.diodes.com/assets/Datasheets/FMMT493.pdf" 200 300 60 H I L CNN
-F4 "FMMT493CT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "FMMT493TA" 200 500 60 H I L CNN "MPN"
+F3 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/MMBT2222A.pdf" 200 300 60 H I L CNN
+F4 "MMBT2222AFSCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "MMBT2222A" 200 500 60 H I L CNN "MPN"
 F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
 F7 "Transistors - Bipolar (BJT) - Single" 200 700 60 H I L CNN "Family"
-F8 "https://www.diodes.com/assets/Datasheets/FMMT493.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/diodes-incorporated/FMMT493TA/FMMT493CT-ND/92663" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "TRANS NPN 100V 1A SOT23-3" 200 1000 60 H I L CNN "Description"
-F11 "Diodes Incorporated" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
+F8 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/MMBT2222A.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/on-semiconductor/MMBT2222A/MMBT2222AFSCT-ND/458969" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TRANS NPN 40V 1A SOT-23" 200 1000 60 H I L CNN "Description"
+F11 "ON Semiconductor" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Obsolete NonStock" 200 1200 60 H I L CNN "Status"
 DRAW
 C 0 0 128 0 1 0 f
 P 2 0 1 0 -150 0 -100 0 N

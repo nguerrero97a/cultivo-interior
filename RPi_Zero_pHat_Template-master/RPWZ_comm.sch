@@ -272,4 +272,74 @@ Text HLabel 3800 4100 0    50   Input ~ 0
 RPZW_IO1
 Text HLabel 3800 4000 0    50   Input ~ 0
 RPZW_IO2
+$Comp
+L Switch:SW_Push SW?
+U 1 1 608751BA
+P 7250 4900
+AR Path="/60760232/608751BA" Ref="SW?"  Part="1" 
+AR Path="/60805E76/608751BA" Ref="SW1"  Part="1" 
+F 0 "SW1" V 7204 5048 50  0000 L CNN
+F 1 "SW_Push" V 7295 5048 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 7250 5100 50  0001 C CNN
+F 3 "~" H 7250 5100 50  0001 C CNN
+	1    7250 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7250 5150 7150 5150
+Connection ~ 7250 5150
+Wire Wire Line
+	7250 5150 7250 5100
+Text Label 7150 5150 2    50   ~ 0
+Button_RPZW
+$Comp
+L power:+3.3V #PWR?
+U 1 1 608751C4
+P 7250 4700
+AR Path="/608751C4" Ref="#PWR?"  Part="1" 
+AR Path="/60760232/608751C4" Ref="#PWR?"  Part="1" 
+AR Path="/60805E76/608751C4" Ref="#PWR0160"  Part="1" 
+F 0 "#PWR0160" H 7250 4550 50  0001 C CNN
+F 1 "+3.3V" H 7265 4873 50  0000 C CNN
+F 2 "" H 7250 4700 50  0001 C CNN
+F 3 "" H 7250 4700 50  0001 C CNN
+	1    7250 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 5200 7250 5150
+$Comp
+L power:GND #PWR?
+U 1 1 608751CB
+P 7250 5500
+AR Path="/608751CB" Ref="#PWR?"  Part="1" 
+AR Path="/607B7D6E/608751CB" Ref="#PWR?"  Part="1" 
+AR Path="/60760232/608751CB" Ref="#PWR?"  Part="1" 
+AR Path="/60805E76/608751CB" Ref="#PWR0161"  Part="1" 
+F 0 "#PWR0161" H 7250 5250 50  0001 C CNN
+F 1 "GND" H 7255 5327 50  0000 C CNN
+F 2 "" H 7250 5500 50  0001 C CNN
+F 3 "" H 7250 5500 50  0001 C CNN
+	1    7250 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608751D1
+P 7250 5350
+AR Path="/6081C49D/608751D1" Ref="R?"  Part="1" 
+AR Path="/607B7D6E/608751D1" Ref="R?"  Part="1" 
+AR Path="/60760232/608751D1" Ref="R?"  Part="1" 
+AR Path="/60805E76/608751D1" Ref="R20"  Part="1" 
+F 0 "R20" V 7043 5350 50  0000 C CNN
+F 1 "1k" V 7134 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7180 5350 50  0001 C CNN
+F 3 "~" H 7250 5350 50  0001 C CNN
+	1    7250 5350
+	-1   0    0    1   
+$EndComp
+Text Label 6450 4400 2    50   ~ 0
+Button_RPZW
+Wire Wire Line
+	6000 4400 6450 4400
 $EndSCHEMATC

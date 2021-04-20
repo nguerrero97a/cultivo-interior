@@ -78,7 +78,7 @@ AR Path="/60821713" Ref="C?"  Part="1"
 AR Path="/6081C49D/60821713" Ref="C13"  Part="1" 
 F 0 "C13" H 1200 1600 50  0000 L CNN
 F 1 "100nF" H 1200 1500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1488 1350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 1488 1350 50  0001 C CNN
 F 3 "~" H 1450 1500 50  0001 C CNN
 	1    1450 1500
 	1    0    0    -1  
@@ -196,7 +196,7 @@ U 1 1 60735627
 P 5550 1200
 F 0 "R3" V 5343 1200 50  0000 C CNN
 F 1 "180" V 5434 1200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5480 1200 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5480 1200 50  0001 C CNN
 F 3 "~" H 5550 1200 50  0001 C CNN
 	1    5550 1200
 	0    1    1    0   
@@ -496,98 +496,14 @@ Wire Wire Line
 Connection ~ 9350 3600
 Wire Wire Line
 	9350 3600 9150 3600
-$Comp
-L dk_Diodes-Rectifiers-Single:1N4148W-TP D1
-U 1 1 607C3C93
-P 5750 3100
-F 0 "D1" H 5750 3337 60  0000 C CNN
-F 1 "1N4148W-TP" H 5750 3231 60  0000 C CNN
-F 2 "digikey-footprints:SOD-123" H 5950 3300 60  0001 L CNN
-F 3 "https://www.mccsemi.com/pdf/Products/1N4148W(SOD123).pdf" H 5950 3400 60  0001 L CNN
-F 4 "1N4148WTPMSCT-ND" H 5950 3500 60  0001 L CNN "Digi-Key_PN"
-F 5 "1N4148W-TP" H 5950 3600 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5950 3700 60  0001 L CNN "Category"
-F 7 "Diodes - Rectifiers - Single" H 5950 3800 60  0001 L CNN "Family"
-F 8 "https://www.mccsemi.com/pdf/Products/1N4148W(SOD123).pdf" H 5950 3900 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/micro-commercial-co/1N4148W-TP/1N4148WTPMSCT-ND/717311" H 5950 4000 60  0001 L CNN "DK_Detail_Page"
-F 10 "DIODE GEN PURP 100V 150MA SOD123" H 5950 4100 60  0001 L CNN "Description"
-F 11 "Micro Commercial Co" H 5950 4200 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5950 4300 60  0001 L CNN "Status"
-	1    5750 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5550 3100 5450 3100
-Wire Wire Line
-	5950 3100 6000 3100
 Wire Wire Line
 	6000 3100 6000 3600
 Wire Wire Line
 	5450 3100 5450 3600
-$Comp
-L dk_Diodes-Rectifiers-Single:1N4148W-TP D2
-U 1 1 607CD147
-P 9100 3150
-F 0 "D2" H 9100 3387 60  0000 C CNN
-F 1 "1N4148W-TP" H 9100 3281 60  0000 C CNN
-F 2 "digikey-footprints:SOD-123" H 9300 3350 60  0001 L CNN
-F 3 "https://www.mccsemi.com/pdf/Products/1N4148W(SOD123).pdf" H 9300 3450 60  0001 L CNN
-F 4 "1N4148WTPMSCT-ND" H 9300 3550 60  0001 L CNN "Digi-Key_PN"
-F 5 "1N4148W-TP" H 9300 3650 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 9300 3750 60  0001 L CNN "Category"
-F 7 "Diodes - Rectifiers - Single" H 9300 3850 60  0001 L CNN "Family"
-F 8 "https://www.mccsemi.com/pdf/Products/1N4148W(SOD123).pdf" H 9300 3950 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/micro-commercial-co/1N4148W-TP/1N4148WTPMSCT-ND/717311" H 9300 4050 60  0001 L CNN "DK_Detail_Page"
-F 10 "DIODE GEN PURP 100V 150MA SOD123" H 9300 4150 60  0001 L CNN "Description"
-F 11 "Micro Commercial Co" H 9300 4250 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9300 4350 60  0001 L CNN "Status"
-	1    9100 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8900 3150 8800 3150
-Wire Wire Line
-	9300 3150 9350 3150
-$Comp
-L dk_Transistors-Bipolar-BJT-Single:FMMT493TA Q2
-U 1 1 607E68CB
-P 5200 3850
-F 0 "Q2" H 5388 3903 60  0000 L CNN
-F 1 "FMMT495TA" H 5388 3797 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5400 4050 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/FMMT493.pdf" H 5400 4150 60  0001 L CNN
-F 4 "FMMT493CT-ND" H 5400 4250 60  0001 L CNN "Digi-Key_PN"
-F 5 "FMMT493TA" H 5400 4350 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5400 4450 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 5400 4550 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/FMMT493.pdf" H 5400 4650 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/FMMT493TA/FMMT493CT-ND/92663" H 5400 4750 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 100V 1A SOT23-3" H 5400 4850 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 5400 4950 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5400 5050 60  0001 L CNN "Status"
-	1    5200 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Transistors-Bipolar-BJT-Single:FMMT493TA Q3
-U 1 1 607EA985
-P 8600 3850
-F 0 "Q3" H 8788 3903 60  0000 L CNN
-F 1 "FMMT495TA" H 8788 3797 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 8800 4050 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/FMMT493.pdf" H 8800 4150 60  0001 L CNN
-F 4 "FMMT493CT-ND" H 8800 4250 60  0001 L CNN "Digi-Key_PN"
-F 5 "FMMT493TA" H 8800 4350 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 8800 4450 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 8800 4550 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/FMMT493.pdf" H 8800 4650 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/FMMT493TA/FMMT493CT-ND/92663" H 8800 4750 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 100V 1A SOT23-3" H 8800 4850 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 8800 4950 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 8800 5050 60  0001 L CNN "Status"
-	1    8600 3850
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R12
 U 1 1 60809563
@@ -885,4 +801,70 @@ Wire Wire Line
 Wire Wire Line
 	2850 2850 2700 2850
 Connection ~ 2700 2850
+$Comp
+L Diode:1N4148WS D1
+U 1 1 607FB5A3
+P 5700 3100
+F 0 "D1" H 5700 2883 50  0000 C CNN
+F 1 "1N4148WS" H 5700 2974 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 5700 2925 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 5700 3100 50  0001 C CNN
+	1    5700 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 3100 6000 3100
+$Comp
+L Diode:1N4148WS D2
+U 1 1 60803048
+P 9050 3150
+F 0 "D2" H 9050 2933 50  0000 C CNN
+F 1 "1N4148WS" H 9050 3024 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 9050 2975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9050 3150 50  0001 C CNN
+	1    9050 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9200 3150 9350 3150
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT2222A_Obsolete Q2
+U 1 1 608085CC
+P 5200 3850
+F 0 "Q2" H 5388 3903 60  0000 L CNN
+F 1 "MMBT2222A" H 5388 3797 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 5400 4050 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/MMBT2222A.pdf" H 5400 4150 60  0001 L CNN
+F 4 "MMBT2222AFSCT-ND" H 5400 4250 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT2222A" H 5400 4350 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5400 4450 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 5400 4550 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/MMBT2222A.pdf" H 5400 4650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/MMBT2222A/MMBT2222AFSCT-ND/458969" H 5400 4750 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 1A SOT-23" H 5400 4850 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 5400 4950 60  0001 L CNN "Manufacturer"
+F 12 "Obsolete NonStock" H 5400 5050 60  0001 L CNN "Status"
+	1    5200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT2222A_Obsolete Q3
+U 1 1 6080CE83
+P 8600 3850
+F 0 "Q3" H 8788 3903 60  0000 L CNN
+F 1 "MMBT2222A" H 8788 3797 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 8800 4050 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/MMBT2222A.pdf" H 8800 4150 60  0001 L CNN
+F 4 "MMBT2222AFSCT-ND" H 8800 4250 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT2222A" H 8800 4350 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 8800 4450 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 8800 4550 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/MMBT2222A.pdf" H 8800 4650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/MMBT2222A/MMBT2222AFSCT-ND/458969" H 8800 4750 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 1A SOT-23" H 8800 4850 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 8800 4950 60  0001 L CNN "Manufacturer"
+F 12 "Obsolete NonStock" H 8800 5050 60  0001 L CNN "Status"
+	1    8600 3850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
