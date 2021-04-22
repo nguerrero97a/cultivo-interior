@@ -136,11 +136,11 @@ SDA_I2C
 Wire Wire Line
 	4150 4350 4450 4350
 Text Label 4450 4350 2    50   ~ 0
-TX
+TX1
 Wire Wire Line
 	4150 4450 4450 4450
 Text Label 4450 4450 2    50   ~ 0
-RX
+RX1
 Wire Wire Line
 	4150 4750 4450 4750
 Wire Wire Line
@@ -282,7 +282,7 @@ AR Path="/607B7D6E/6076D201" Ref="C?"  Part="1"
 AR Path="/60760232/6076D201" Ref="C1"  Part="1" 
 F 0 "C1" H 6865 3196 50  0000 L CNN
 F 1 "100nF" H 6865 3105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 6788 3000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6788 3000 50  0001 C CNN
 F 3 "~" H 6750 3150 50  0001 C CNN
 	1    6750 3150
 	1    0    0    -1  
@@ -296,7 +296,7 @@ AR Path="/607B7D6E/6076D207" Ref="C?"  Part="1"
 AR Path="/60760232/6076D207" Ref="C4"  Part="1" 
 F 0 "C4" H 7365 3196 50  0000 L CNN
 F 1 "100nF" H 7365 3105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 7288 3000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7288 3000 50  0001 C CNN
 F 3 "~" H 7250 3150 50  0001 C CNN
 	1    7250 3150
 	1    0    0    -1  
@@ -310,7 +310,7 @@ AR Path="/607B7D6E/6076D20D" Ref="C?"  Part="1"
 AR Path="/60760232/6076D20D" Ref="C5"  Part="1" 
 F 0 "C5" H 7865 3196 50  0000 L CNN
 F 1 "100nF" H 7865 3105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 7788 3000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7788 3000 50  0001 C CNN
 F 3 "~" H 7750 3150 50  0001 C CNN
 	1    7750 3150
 	1    0    0    -1  
@@ -324,7 +324,7 @@ AR Path="/607B7D6E/6076D213" Ref="C?"  Part="1"
 AR Path="/60760232/6076D213" Ref="C7"  Part="1" 
 F 0 "C7" H 8365 3196 50  0000 L CNN
 F 1 "100nF" H 8365 3105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 8288 3000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8288 3000 50  0001 C CNN
 F 3 "~" H 8250 3150 50  0001 C CNN
 	1    8250 3150
 	1    0    0    -1  
@@ -338,7 +338,7 @@ AR Path="/607B7D6E/6076D219" Ref="C?"  Part="1"
 AR Path="/60760232/6076D219" Ref="C11"  Part="1" 
 F 0 "C11" H 8865 3196 50  0000 L CNN
 F 1 "100nF" H 8865 3105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 8788 3000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8788 3000 50  0001 C CNN
 F 3 "~" H 8750 3150 50  0001 C CNN
 	1    8750 3150
 	1    0    0    -1  
@@ -683,4 +683,27 @@ F 3 "~" H 2050 6700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2300 4650 2850 4650
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 6082711C
+P 4750 3450
+AR Path="/6081C49D/6082711C" Ref="J?"  Part="1" 
+AR Path="/60760232/6082711C" Ref="J12"  Part="1" 
+F 0 "J12" V 4714 3262 50  0000 R CNN
+F 1 "Conn_USART" V 4623 3262 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 4750 3450 50  0001 C CNN
+F 3 "~" H 4750 3450 50  0001 C CNN
+	1    4750 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 3650 4750 3650
+Text Label 4550 3650 2    50   ~ 0
+TX2
+Wire Wire Line
+	4150 3750 4850 3750
+Wire Wire Line
+	4850 3750 4850 3650
+Text Label 4550 3750 2    50   ~ 0
+RX2
 $EndSCHEMATC
