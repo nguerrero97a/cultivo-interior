@@ -245,45 +245,29 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 J6
 U 1 1 6074CBC0
-P 6050 1000
-F 0 "J6" V 6014 812 50  0000 R CNN
-F 1 "R_Si" V 5923 812 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6050 1000 50  0001 C CNN
-F 3 "~" H 6050 1000 50  0001 C CNN
-	1    6050 1000
-	0    -1   -1   0   
+P 6100 1000
+F 0 "J6" V 6150 1200 50  0000 R CNN
+F 1 "R_Si" V 6050 1250 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6100 1000 50  0001 C CNN
+F 3 "~" H 6100 1000 50  0001 C CNN
+	1    6100 1000
+	0    1    -1   0   
 $EndComp
 $Comp
 L power:GNDREF #PWR0138
 U 1 1 6073AE44
-P 6850 1200
-F 0 "#PWR0138" H 6850 950 50  0001 C CNN
-F 1 "GNDREF" H 6855 1027 50  0000 C CNN
-F 2 "" H 6850 1200 50  0001 C CNN
-F 3 "" H 6850 1200 50  0001 C CNN
-	1    6850 1200
+P 6750 1200
+F 0 "#PWR0138" H 6750 950 50  0001 C CNN
+F 1 "GNDREF" H 6755 1027 50  0000 C CNN
+F 2 "" H 6750 1200 50  0001 C CNN
+F 3 "" H 6750 1200 50  0001 C CNN
+	1    6750 1200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J5
-U 1 1 60750E09
-P 6750 1000
-F 0 "J5" V 6714 812 50  0000 R CNN
-F 1 "120VAC" V 6623 812 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6750 1000 50  0001 C CNN
-F 3 "~" H 6750 1000 50  0001 C CNN
-	1    6750 1000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6750 1200 6150 1200
-Wire Wire Line
-	6050 1200 5800 1200
 Wire Wire Line
 	5400 1200 5250 1200
 Wire Wire Line
 	5700 1200 5800 1200
-Connection ~ 5800 1200
 Wire Wire Line
 	5150 1550 5650 1550
 $Comp
@@ -338,7 +322,7 @@ F 3 "" H 9700 1400 50  0001 C CNN
 	1    9700 1400
 	1    0    0    -1  
 $EndComp
-Text Label 6400 1200 0    50   ~ 0
+Text Label 6250 1200 0    50   ~ 0
 120VAC
 $Comp
 L Device:R R7
@@ -574,7 +558,7 @@ AR Path="/60760232/608150DB" Ref="D?"  Part="1"
 AR Path="/60805E76/608150DB" Ref="D?"  Part="1" 
 AR Path="/6081C49D/608150DB" Ref="D7"  Part="1" 
 F 0 "D7" H 4100 2250 50  0000 C CNN
-F 1 "LED" H 4100 2150 50  0000 C CNN
+F 1 "LED_RSi" H 4100 2150 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 4100 2000 50  0001 C CNN
 F 3 "~" H 4100 2000 50  0001 C CNN
 	1    4100 2000
@@ -629,7 +613,7 @@ AR Path="/60760232/6081979C" Ref="D?"  Part="1"
 AR Path="/60805E76/6081979C" Ref="D?"  Part="1" 
 AR Path="/6081C49D/6081979C" Ref="D8"  Part="1" 
 F 0 "D8" H 4450 4750 50  0000 C CNN
-F 1 "LED" H 4450 4650 50  0000 C CNN
+F 1 "LED_Vent" H 4450 4650 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 4450 4500 50  0001 C CNN
 F 3 "~" H 4450 4500 50  0001 C CNN
 	1    4450 4500
@@ -684,7 +668,7 @@ AR Path="/60760232/6081EC29" Ref="D?"  Part="1"
 AR Path="/60805E76/6081EC29" Ref="D?"  Part="1" 
 AR Path="/6081C49D/6081EC29" Ref="D9"  Part="1" 
 F 0 "D9" H 7850 4750 50  0000 C CNN
-F 1 "LED" H 7850 4650 50  0000 C CNN
+F 1 "LED_H2O" H 7850 4650 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 7850 4500 50  0001 C CNN
 F 3 "~" H 7850 4500 50  0001 C CNN
 	1    7850 4500
@@ -739,7 +723,7 @@ AR Path="/60760232/60824789" Ref="D?"  Part="1"
 AR Path="/60805E76/60824789" Ref="D?"  Part="1" 
 AR Path="/6081C49D/60824789" Ref="D10"  Part="1" 
 F 0 "D10" H 8600 2100 50  0000 C CNN
-F 1 "LED" H 8600 2000 50  0000 C CNN
+F 1 "LEDs" H 8600 2000 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 8600 1850 50  0001 C CNN
 F 3 "~" H 8600 1850 50  0001 C CNN
 	1    8600 1850
@@ -867,4 +851,42 @@ F 12 "Obsolete NonStock" H 8800 5050 60  0001 L CNN "Status"
 	1    8600 3850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 608467C0
+P 9850 5600
+F 0 "H2" H 9950 5646 50  0000 L CNN
+F 1 "MountingHole" H 9950 5555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 9850 5600 50  0001 C CNN
+F 3 "~" H 9850 5600 50  0001 C CNN
+	1    9850 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 60846A18
+P 9850 6000
+F 0 "H3" H 9950 6046 50  0000 L CNN
+F 1 "MountingHole" H 9950 5955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 9850 6000 50  0001 C CNN
+F 3 "~" H 9850 6000 50  0001 C CNN
+	1    9850 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 60750E09
+P 6750 1000
+F 0 "J5" V 6750 1200 50  0000 R CNN
+F 1 "120VAC" V 6650 1350 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6750 1000 50  0001 C CNN
+F 3 "~" H 6750 1000 50  0001 C CNN
+	1    6750 1000
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6100 1200 6650 1200
+Wire Wire Line
+	6000 1200 5800 1200
+Connection ~ 5800 1200
 $EndSCHEMATC
