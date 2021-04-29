@@ -25,4 +25,5 @@
   (lib (name Switches)(type KiCad)(uri ${KIPRJMOD}/footprints/Switches.pretty)(options "")(descr ""))
   (lib (name TLP)(type KiCad)(uri ${KIPRJMOD}/footprints/TLP.pretty)(options "")(descr ""))
   (lib (name RJ9-Conn)(type KiCad)(uri ${KIPRJMOD}/footprints/RJ9-Conn.pretty)(options "")(descr ""))
+  (lib (name LED_SMD_90deg)(type KiCad)(uri ${KIPRJMOD}/footprints/LED_SMD_90deg.pretty)(options "")(descr ""))
 )

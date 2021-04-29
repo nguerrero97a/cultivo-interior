@@ -785,30 +785,8 @@ Wire Wire Line
 Wire Wire Line
 	2850 2850 2700 2850
 Connection ~ 2700 2850
-$Comp
-L Diode:1N4148WS D1
-U 1 1 607FB5A3
-P 5700 3100
-F 0 "D1" H 5700 2883 50  0000 C CNN
-F 1 "1N4148WS" H 5700 2974 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323" H 5700 2925 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 5700 3100 50  0001 C CNN
-	1    5700 3100
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	5850 3100 6000 3100
-$Comp
-L Diode:1N4148WS D2
-U 1 1 60803048
-P 9050 3150
-F 0 "D2" H 9050 2933 50  0000 C CNN
-F 1 "1N4148WS" H 9050 3024 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323" H 9050 2975 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9050 3150 50  0001 C CNN
-	1    9050 3150
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	9200 3150 9350 3150
 $Comp
@@ -889,4 +867,26 @@ Wire Wire Line
 Wire Wire Line
 	6000 1200 5800 1200
 Connection ~ 5800 1200
+$Comp
+L Diode:MRA4004T3G D2
+U 1 1 608B4401
+P 9050 3150
+F 0 "D2" H 9050 2933 50  0000 C CNN
+F 1 "MRA4004T3G" H 9050 3024 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 9050 2975 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/MRA4003T3-D.PDF" H 9050 3150 50  0001 C CNN
+	1    9050 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:MRA4004T3G D1
+U 1 1 608BA0DD
+P 5700 3100
+F 0 "D1" H 5700 2883 50  0000 C CNN
+F 1 "MRA4004T3G" H 5700 2974 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 5700 2925 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/MRA4003T3-D.PDF" H 5700 3100 50  0001 C CNN
+	1    5700 3100
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
