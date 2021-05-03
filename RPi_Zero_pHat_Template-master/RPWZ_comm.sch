@@ -150,17 +150,13 @@ Text Notes 4250 4900 0    100  ~ 0
 Raspberry Pi Zero W
 Text Label 3800 2700 0    50   ~ 0
 SDA_I2C
-Wire Wire Line
-	4100 4400 3800 4400
-Text Label 3900 4400 0    50   ~ 0
+Text Label 3850 3500 0    50   ~ 0
 JTDI
 Wire Wire Line
 	4100 3300 3800 3300
-Text Label 3850 3300 0    50   ~ 0
+Text Label 3850 3100 0    50   ~ 0
 JNTRST
-Wire Wire Line
-	4100 3200 3800 3200
-Text Label 3850 3200 0    50   ~ 0
+Text Label 3850 3700 0    50   ~ 0
 JTMS
 Wire Wire Line
 	4100 2800 3800 2800
@@ -168,40 +164,24 @@ Text Label 3800 2800 0    50   ~ 0
 SCL_I2C
 Wire Wire Line
 	4100 2700 3800 2700
-Wire Wire Line
-	6000 2900 6300 2900
-Wire Wire Line
-	6000 3000 6300 3000
-Text Label 6100 2900 0    50   ~ 0
-TX
-Wire Wire Line
-	6000 3400 6300 3400
-Text Label 6100 3400 0    50   ~ 0
+Text Label 3850 3300 0    50   ~ 0
 JTDO
-Wire Wire Line
-	6000 3600 6300 3600
-Text Label 6100 3600 0    50   ~ 0
+Text Label 3850 3600 0    50   ~ 0
 JTCK
-Text Label 6100 3000 0    50   ~ 0
-RX
-Text HLabel 6300 3400 2    50   Input ~ 0
-RPWZ_JTDO
-Text HLabel 6300 3600 2    50   Input ~ 0
-RPWZ_JTCK
-Text HLabel 3800 4400 0    50   Input ~ 0
-RPWZ_JTDI
 Text HLabel 3800 3300 0    50   Input ~ 0
+RPWZ_JTDO
+Text HLabel 3800 3600 0    50   Input ~ 0
+RPWZ_JTCK
+Text HLabel 3800 3500 0    50   Input ~ 0
+RPWZ_JTDI
+Text HLabel 3800 3100 0    50   Input ~ 0
 RPWZ_JNTRST
-Text HLabel 3800 3200 0    50   Input ~ 0
+Text HLabel 3800 3700 0    50   Input ~ 0
 RPWZ_JTMS
 Text HLabel 3800 2800 0    50   Input ~ 0
 RPWZ_SCL_I2C
 Text HLabel 3800 2700 0    50   Input ~ 0
 RPWZ_SDA_I2C
-Text HLabel 6300 2900 2    50   Input ~ 0
-RPWZ_TX
-Text HLabel 6300 3000 2    50   Input ~ 0
-RPWZ_RX
 Wire Wire Line
 	4100 4200 3800 4200
 Text Label 3900 4200 0    50   ~ 0
@@ -374,4 +354,24 @@ Wire Wire Line
 	8650 4800 8650 5100
 Wire Wire Line
 	8650 5100 8800 5100
+Wire Wire Line
+	6000 2900 6300 2900
+Wire Wire Line
+	6000 3000 6300 3000
+Text Label 6100 2900 0    50   ~ 0
+TX
+Text HLabel 6300 2900 2    50   Input ~ 0
+RPWZ_TX
+Text Label 6100 3000 0    50   ~ 0
+RX
+Text HLabel 6300 3000 2    50   Input ~ 0
+RPWZ_RX
+Wire Wire Line
+	3800 3500 4100 3500
+Wire Wire Line
+	4100 3600 3800 3600
+Wire Wire Line
+	3800 3700 4100 3700
+Wire Wire Line
+	3800 3100 4100 3100
 $EndSCHEMATC

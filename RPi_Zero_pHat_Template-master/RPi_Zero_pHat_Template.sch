@@ -232,35 +232,4 @@ F 3 "" H 4400 6450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4400 6450 4150 6450
-$Comp
-L Connector:Conn_01x05_Male J11
-U 1 1 60870978
-P 5650 6600
-F 0 "J11" H 5758 6981 50  0000 C CNN
-F 1 "JTAG Conn" H 5758 6890 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5650 6600 50  0001 C CNN
-F 3 "~" H 5650 6600 50  0001 C CNN
-	1    5650 6600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 6400 6300 6400
-Text Label 6300 6400 2    50   ~ 0
-JTDO
-Wire Wire Line
-	5850 6500 6300 6500
-Wire Wire Line
-	5850 6600 6300 6600
-Wire Wire Line
-	5850 6700 6300 6700
-Wire Wire Line
-	5850 6800 6300 6800
-Text Label 6300 6500 2    50   ~ 0
-JTCK
-Text Label 6300 6600 2    50   ~ 0
-JTDI
-Text Label 6300 6700 2    50   ~ 0
-JNTRST
-Text Label 6300 6800 2    50   ~ 0
-JTMS
 $EndSCHEMATC
