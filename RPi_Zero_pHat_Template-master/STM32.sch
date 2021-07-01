@@ -41,7 +41,7 @@ AR Path="/60762529" Ref="L?"  Part="1"
 AR Path="/60760232/60762529" Ref="L1"  Part="1" 
 F 0 "L1" V 4290 5200 50  0000 C CNN
 F 1 "33nH" V 4199 5200 50  0000 C CNN
-F 2 "Inductor_SMD:L_0402_1005Metric" H 4100 5200 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 4100 5200 50  0001 C CNN
 F 3 "~" H 4100 5200 50  0001 C CNN
 	1    4100 5200
 	0    -1   -1   0   
@@ -159,8 +159,6 @@ Wire Wire Line
 	5150 3950 4150 3950
 Wire Wire Line
 	5150 4050 4150 4050
-Wire Wire Line
-	5150 4150 4150 4150
 Text Label 4250 3450 0    50   ~ 0
 O_Resistencia_Si
 Text Label 4250 3650 0    50   ~ 0
@@ -169,8 +167,6 @@ Text Label 4250 3550 0    50   ~ 0
 O_Bomba_Agua
 Text Label 4250 3750 0    50   ~ 0
 O_LEDs
-Text Label 4250 4150 0    50   ~ 0
-I_LM35
 Text Label 4250 4050 0    50   ~ 0
 I_HD38
 Text Label 4250 3950 0    50   ~ 0
@@ -191,8 +187,6 @@ Text HLabel 5150 3550 2    50   Input ~ 0
 STM32_Bomba_Agua
 Text HLabel 5150 3750 2    50   Input ~ 0
 STM32_LEDs
-Text HLabel 5150 4150 2    50   Input ~ 0
-STM32_LM35
 Text HLabel 5150 4050 2    50   Input ~ 0
 STM32_HD38
 Text HLabel 5150 3950 2    50   Input ~ 0
@@ -310,7 +304,7 @@ AR Path="/607B7D6E/6076D270" Ref="L?"  Part="1"
 AR Path="/60760232/6076D270" Ref="L2"  Part="1" 
 F 0 "L2" V 8040 4450 50  0000 C CNN
 F 1 "33nH" V 7949 4450 50  0000 C CNN
-F 2 "Inductor_SMD:L_0402_1005Metric" H 7850 4450 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 7850 4450 50  0001 C CNN
 F 3 "~" H 7850 4450 50  0001 C CNN
 	1    7850 4450
 	0    -1   -1   0   
