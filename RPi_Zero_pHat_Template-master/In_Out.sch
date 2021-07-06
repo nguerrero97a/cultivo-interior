@@ -834,15 +834,4 @@ Wire Notes Line
 	3300 750  10950 750 
 Text Notes 3500 1050 0    75   ~ 15
 Actuadores
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 60DF237F
-P 9900 6100
-F 0 "H4" H 10000 6146 50  0000 L CNN
-F 1 "MountingHole" H 10000 6055 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm" H 9900 6100 50  0001 C CNN
-F 3 "~" H 9900 6100 50  0001 C CNN
-	1    9900 6100
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
